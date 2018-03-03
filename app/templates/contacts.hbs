@@ -1,9 +1,13 @@
 {{ log model }}
 <h1>Contacts</h1>
 {{outlet}}
+{{#if model}}
 {{#each model as |contact|}}
 {{#link-to 'contact' contact.id}}
 <h4>{{contact.firstName}} {{contact.lastName}}</h4>
 {{/link-to}}
 <h5>{{contact.email}}</h5>
 {{/each}}
+{{else}}
+<h4>There are no contacts</h4>
+{{/if}}
