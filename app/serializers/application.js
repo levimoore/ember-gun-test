@@ -11,7 +11,7 @@ normalizeFindAllResponse: function(store, primaryModelClass, payload, id, reques
   _cleanupData(contacts){
   	return contacts.map((contact) => {
   		console.log(contact);
-  		contact.id = contact._['#'];
+  		contact.id = contact.id;
   		//delete contact._
   		return contact;
   	});

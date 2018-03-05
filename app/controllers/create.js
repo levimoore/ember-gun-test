@@ -12,7 +12,7 @@ export default Controller.extend({
         lastName: lastName,
         email: email,
         phoneNumber: phoneNumber
-      });
+      }).save();
     }
   }
 });
