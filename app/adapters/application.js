@@ -29,7 +29,7 @@ export default DS.Adapter.extend({
         } else {
       		gun.get(storageKeyForModelName).map().on(function(data){
       			arr.push(data);
-      			console.log(...arguments);
+      			console.log(data);
 
       			resolve(arr);
       		});
